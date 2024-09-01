@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Registration </title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f3f3f3;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+
+			.main {
+				background-color: #fff;
+				border-radius: 15px;
+				padding: 100px;
+				width: 300px;
+			}
+
+			.main h1 {
+				color: #4caf50;
+				margin-bottom: 20px;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+				color: #555;
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="password"],
+			select {
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 10px;
+				box-sizing: border-box;
+				border: 1px solid #ddd;
+				
+			}
+
+			button[type="submit"] {
+				padding: 15px;
+				border: none;
+				background-color: #4caf50;
+				color: white;
+				cursor: pointer;
+				width: 30%;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+		<center><h1>Registration page</h1></center>
+			<form action="">
+				<label for="first"
+					>First Name:</label
+				>
+				<input
+					type="text"
+					id="first"
+					name="first"
+					required
+				/>
+
+				<label for="last"
+					>Last Name:</label
+				>
+				<input
+					type="text"
+					id="last"
+					name="last"
+					required
+				/>
+
+				<label for="password"
+					>Password:</label
+				>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					
+					required
+				/>
+
+				<label for="mobile"
+					>phone:</label
+				>
+				<input
+					type="text"
+					id="mobile"
+					name="mobile"
+					maxlength="10"
+					required
+				/>
+
+				
+				<a href="home.html>"<center><button type="submit" id="register">
+					register
+				</button></center></a>
+			</form>
+			<p>already have an account? 
+			<a href="login.html"
+			style="text-decoration: none;"><u>
+				login</u>
+			</a>
+		</p>
+		</div>
+		
+	</body>
+</html>

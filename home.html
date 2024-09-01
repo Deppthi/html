@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Management System</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+	/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:  #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 20px;
+    background-color:  #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+form {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 100px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Garbage Management System</h1>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Administrator Section -->
+        <section id="admin-section">
+            <h2>Administrator</h2>
+            <form id="admin-login-form">
+                <!-- Admin login form -->
+            </form>
+            <button id="create-bin-btn">Create Garbage Bin</button>
+            <button id="manage-driver-btn">Manage Driver</button>
+            <button id="view-report-btn">View Garbage Report</button>
+            <button id="view-complaints-btn">View Complaints from Public</button>
+        </section>
+        <section id="public-section">
+            <h2>General Public</h2>
+            <form id="public-register-form">
+                <!-- Public registration form -->
+            </form>
+            <form id="public-login-form">
+                <!-- Public login form -->
+            </form>
+            <button id="register-complaint-btn">Register Complaint</button>
+            <button id="view-my-complaint-btn">View My Complaint & Status</button>
+        </section>
+        <section id="driver-section">
+            <h2>Driver</h2>
+            <form id="driver-login-form">
+                <!-- Driver login form -->
+            </form>
+		<a href="update.html"><button id="update-load-btn">Update Garbage Load</button></a>
+            <button id="check-updates-btn">Check Daily Work Updates</button>
+            <button id="choose-route-btn">Choose Best Route</button>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Garbage Management System. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
